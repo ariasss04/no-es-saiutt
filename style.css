@@ -1,0 +1,143 @@
+/* General */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9fafc;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: #2980b9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    header i {
+        margin-right: 10px;
+    }
+
+/* Zona de carga */
+.upload-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.upload-label {
+    display: inline-block;
+    background: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+    .upload-label i {
+        margin-right: 8px;
+    }
+
+    .upload-label:hover {
+        background: #21618c;
+    }
+
+/* Mensajes */
+#message {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-align: center;
+    display: none;
+}
+
+    #message.success {
+        background-color: #eafaf1;
+        color: #1e8449;
+        border: 1px solid #27ae60;
+    }
+
+    #message.error {
+        background-color: #fdecea;
+        color: #c0392b;
+        border: 1px solid #e74c3c;
+    }
+
+/* Tabla */
+.table-section {
+    max-width: 90%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead th {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #eaf3fc;
+    transition: 0.2s;
+}
+
+/* Inputs */
+input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+    input[type="number"]:focus {
+        border-color: #2980b9;
+        outline: none;
+        box-shadow: 0 0 4px rgba(41, 128, 185, 0.5);
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background: #f1f1f1;
+    font-size: 14px;
+    color: #555;
+}
+
+    footer i {
+        color: #2980b9;
+        margin-right: 6px;
+    }

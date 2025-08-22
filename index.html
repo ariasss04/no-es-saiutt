@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Calificaciones</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2DkGkO6QeP4bUj6bH8kC4kqQgrnJ4N1f8+z6RjP9pqy2nX9W3ym4NpzN4e6x5n9Vg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1><i class="fa-solid fa-graduation-cap"></i> Gestión de Calificaciones</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main>
+        <!-- Zona de carga de archivo -->
+        <section class="upload-section">
+            <label for="csvFile" class="upload-label">
+                <i class="fa-solid fa-file-import"></i> Cargar archivo CSV
+            </label>
+            <input type="file" id="csvFile" accept=".csv" hidden />
+        </section>
+
+        <!-- Mensajes dinámicos -->
+        <div id="message"></div>
+
+        <!-- Tabla -->
+        <section class="table-section">
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th><i class="fa-solid fa-id-card"></i> Matrícula</th>
+                        <th><i class="fa-solid fa-user"></i> Nombre</th>
+                        <th><i class="fa-solid fa-file-lines"></i> Documento</th>
+                        <th><i class="fa-solid fa-tasks"></i> Actividad</th>
+                        <th><i class="fa-solid fa-pen-to-square"></i> Examen</th>
+                        <th><i class="fa-solid fa-calendar-check"></i> Asistencia</th>
+                        <th><i class="fa-solid fa-hand-paper"></i> Participación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertan las filas dinámicamente con JS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <i class="fa-solid fa-code"></i> Desarrollado para gestión académica |
+            <span class="year"></span>
+        </p>
+    </footer>
+</body>
+</html>
